@@ -14,6 +14,7 @@ namespace FunctionApp5
         {
             ILogger logger = context.CreateReplaySafeLogger(nameof(Function1));
             logger.LogInformation("Saying hello.");
+            logger.LogInformation("Random text.");
             var outputs = new List<string>();
 
             // Replace name and input with values relevant for your Durable Functions Activity
